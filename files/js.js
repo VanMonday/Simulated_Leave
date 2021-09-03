@@ -5,11 +5,11 @@ function Clock() {
     this.date = date.getDate();
     this.day = new Array("星期日", "星期一", "星期二", "星期三", "星期四", "星期五", "星期六")[date.getDay()];
     this.hour = date.getHours() < 10 ? "0" + date.getHours() : date.getHours();
-    this.minute = date.getMinutes() < 10 ? "0" + date.getMinutes() : date.getMinutes();
-    this.second = date.getSeconds() < 10 ? "0" + date.getSeconds() : date.getSeconds();
+    this.minute = date.getMinutes() < 10 ? "0" + date.getMinutes()-5 : date.getMinutes()-5;
+    this.second = date.getSeconds() < 10 ? "0" + date.getSeconds()-5 : date.getSeconds()-5;
  
     this.toString = function() {
-        return this.date + "日" + this.hour + "时" + this.minute-5 + "分"; 
+        return this.date + "日" + this.hour + "时" + this.minute + "分"; 
     };
 	
 	this.toy = function() {
