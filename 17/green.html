@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!-- saved from url=(0038)http://xg.htc.edu.cn/xsgl/qinjia3.aspx -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>
+
+</title><link href="../files/style.css" type="text/css" rel="stylesheet">
+    <script src="../files/js.js" type="text/javascript"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes">
+    <style type="text/css">
+        .auto-style1 {
+            color: #FF0000;
+        }
+    </style>
+    </head>
+<body id="thebody" style="background-color: rgb(153, 255, 153);">
+<div>
+	<strong><a href="./index.html">主页</a> -&nbsp;学生管理 - 学生请假 出入校登记 </strong><span class="auto-style1">本功能试运行，故障请截图反馈班长QQ群</span><br>
+	
+	当前：
+	<span id="clock" style="color:Red;background-color:White;font-size: xx-large"></span>
+		<script type="text/javascript">
+		var clock = new Clock();
+		clock.display(document.getElementById("clock"));
+		</script><br>
+	头像：<img id="tx" src="./photo.jpg" style="width:200px;"><br>
+	身份证号：<span id="sfzh">341222199806217896</span>
+	<br>
+	身份：<span id="sf">信息工程与传媒学院,20级物联网工程（专升本）一班,赵国栋</span>
+	<br>
+	辅导员：<span id="fdy">江寅昌,13635696682</span>
+	&nbsp;<span id="bjsh">同意</span>
+	<br>
+	申请时间：9月<span id="today"><script type="text/javascript">
+		var clock = new Clock();
+		clock.disy(document.getElementById("today"));
+		</script></span>15时27分
+	<br>
+	请假周期：9月<span id="toda"><script type="text/javascript">
+		var clock = new Clock();
+		clock.distoday(document.getElementById("toda"));
+		</script></span>8时00分
+	&nbsp;- 9月<span id="tomorrow"><script type="text/javascript">
+		var clock = new Clock();
+		clock.dist(document.getElementById("tomorrow"));
+		</script></span>23时59分</span><br>
+	离校登记：9月<span id="clock1" ></span>
+	<script type="text/javascript">
+		var clock1 = new Clock();
+		clock1.display(document.getElementById("clock1"));
+	</script><br>
+	返校登记：<span id="fxsj"></span><br>
+	<span id="news" style="color:Red;">当前是离校页面，离校30分钟后可以返校。</span><br>
+	<input name="wzh1" type="hidden" id="wzh1">
+	<input name="wzh2" type="hidden" id="wzh2">
+	<input name="x" type="hidden" id="x" value="1920">
+	<input name="y" type="hidden" id="y" value="1080">
+	<input name="r" type="hidden" id="r" value="1.25">
+	<input name="wzhyb" type="hidden" id="wzhyb">
+	<a href="./green.html"><button>刷新</button></a><br>
+</div>
+<table class="maintab" style="margin-top: 10px;">
+	<tbody><tr>
+		<td style="height: 10px; background: gray; text-align: center;">
+			<a href="./red.html" style="text-decoration: none;color: #000000;">
+				学生处 学生管理科</a></td>
+	</tr>
+</tbody></table>
+
+<script>
+    document.all("x").value = window.screen.width;
+    document.all("y").value = window.screen.height;
+    document.all("r").value = window.devicePixelRatio;
+
+    gethtml5location_fun();
+</script>
+</body></html>
