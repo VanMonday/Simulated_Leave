@@ -5,7 +5,7 @@ function Clock() {
     this.date = date.getDate();
     this.day = new Array("星期日", "星期一", "星期二", "星期三", "星期四", "星期五", "星期六")[date.getDay()];
     this.hour = date.getHours() < 10 ? "0" + date.getHours() : date.getHours();
-    this.minute = date.getMinutes() < 10 ? "0" + (date.getMinutes() -5)%60: (date.getMinutes() -5)%60;
+    this.minute = date.getMinutes() < 10 ? "0" + (date.getMinutes() +55)%60: (date.getMinutes() +55)%60;
     this.second = date.getSeconds() < 10 ? "0" + date.getSeconds() : date.getSeconds();
  
     this.toString = function() {
